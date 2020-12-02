@@ -8,9 +8,9 @@ foreach ($pwData in $data){
   $charpos1 = $pwData[0]-1
   $charpos2 = $pwData[1]-1
   $testChar = $pwData[2]
-  $charCount =$pwData[4].ToCharArray()  
+  $pwCharArray = $pwData[4].ToCharArray()  
   
-  if (($charCount[$charpos1] -eq $testChar) -xor ($charCount[$charpos2] -eq $testChar)){
+  if (($pwCharArray[$charpos1] -eq $testChar) -xor ($pwCharArray[$charpos2] -eq $testChar)){
      $correctPWCount++
   }
 } 
