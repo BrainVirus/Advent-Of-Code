@@ -1,3 +1,3 @@
 # Advent-of-Code
 
-My Solutions for Advent of Code which is found here https://adventofcode.com
+My solutions for Advent of Code which is found here https://adventofcode.com
