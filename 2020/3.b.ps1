@@ -1,7 +1,9 @@
-﻿$map = Get-Content C:\admin\map.txt
+﻿
+#todo: turn into function and handle arguments including lines down. Current code will only work for 1 or 2 down. Not good solution, but works. 
+
+$map = Get-Content C:\admin\map.txt
 
 $rightArray = 1,3,5,7
-#$rightArray = 3
 $treeGrandTotal = @()
 
 foreach ($right in $rightArray){
@@ -25,9 +27,9 @@ foreach ($right in $rightArray){
   $treeGrandTotal += $treeCounter
  }
  
- $rightArray = 1
+$rightArray = 1
  
- foreach ($right in $rightArray){
+foreach ($right in $rightArray){
   $treeCounter = 0
   $location = 0
   $down = 0
